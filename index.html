@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Housing Survey Form</h1>
+    <p id="description">Please fill in all relevant areas below.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="e.g. John" required></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="e.g. xxx@gmail.com" required></label>
+        <label id="number-label">Age<input id="number" type="number" min="18" max="120" placeholder="Required" required></label>
+        <label>What is your current employment status?<select id="dropdown">
+          <option value="0">(select one)</option>
+          <option value="1">Student</option>
+          <option value="2">Part-time</option>
+          <option value="3">Full-time</option>
+          <option value="4">Contract</option>
+          <option value="5">Intern</option>
+          <option value="6">Unemployed</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Do you own or rent your home</label>
+        <label><input type="radio" name="own-rent" value="own" class="inline">Own</label>
+        <label><input type="radio" name="own-rent" value="rent" class="inline">Rent</label>
+      </fieldset>
+      <fieldset>
+        <p>What type of housing have you lived in before?</p>
+          <label><input type="checkbox" value="hdb" class="inline">HDB</label>
+          <label><input type="checkbox" value="condo" class="inline">Condo</label>
+          <label><input type="checkbox" value="landed" class="inline">Landed</label>
+      </fieldset>
+      <fieldset>
+        <label>Briefly describe your dream house<textarea name="dreamhouse" rows="4" cols="50" placeholder="Rooms, Type of housing, Location..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit">   
+    </form>
+  </body>
+</html>
